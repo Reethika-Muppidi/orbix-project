@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBIX</title>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- ✅ Link CSS (IMPORTANT) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">ORBIX</div>
+        <ul>
+
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('about') }}">About</a></li>
+    <li><a href="{{ url_for('income') }}">Income</a></li>
+    <li><a href="{{ url_for('notifications') }}">Notifications</a></li>
+    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Smarter Way to Manage Your Deliveries</h1>
+            <p>Track earnings, handle delays, and protect your income — all in one place.</p>
+
+            <a href="{{ url_for('signup') }}">
+                <button class="btn">Get Started</button>
+            </a>
+        </div>
+
+       <div class="hero-image">
+    <dotlottie-player
+        src="{{ url_for('static', filename='animations/delivery.lottie') }}"
+        background="transparent"
+        speed="1"
+        style="width: 400px; height: 400px;"
+        loop
+        autoplay>
+    </dotlottie-player>
+</div>
+</div>
+</div>
+
+    <!-- WHY USE ORBIX -->
+    <section id="why" class="section-flex">
+
+    <div class="section-image">
+        <img src="{{ url_for('static', filename='images/why.jpg') }}" alt="Why Orbix">
+    </div>
+
+    <div class="section-text">
+        <h2>Why Use ORBIX?</h2>
+        <p>
+            Delivery work is unpredictable. Weather, traffic, and delays affect your income.
+            ORBIX helps you stay secure by tracking and protecting your earnings smartly.
+        </p>
+    </div>
+
+</section>
+
+    <!-- FEATURES -->
+   <section id="features">
+    <h2>What You Can Do</h2>
+
+    <div class="features-container">
+
+        <div class="feature-card">
+            <img src="{{ url_for('static', filename='images/income.png') }}">
+            <h3>Track Income</h3>
+            <p>Monitor daily and weekly earnings easily.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{{ url_for('static', filename='images/performance.png') }}">
+            <h3>Performance</h3>
+            <p>See delivery stats and improve efficiency.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{{ url_for('static', filename='images/protection.png') }}">
+            <h3>Income Protection</h3>
+            <p>Get support when external factors affect your work.</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- ABOUT -->
+ <section id="about" class="section-flex reverse">
+
+    <div class="section-image">
+        <img src="{{ url_for('static', filename='images/about.png') }}" alt="About">
+    </div>
+
+    <div class="section-text">
+        <h2>About ORBIX</h2>
+        <p>
+            ORBIX is built to give delivery partners clarity, confidence, and control over their income.
+        </p>
+    </div>
+
+</section>
+
+    <!-- CALL TO ACTION -->
+    <section>
+        <h2>Start Tracking Your Earnings Today</h2>
+        <p>Join ORBIX and take control of your delivery income.</p>
+
+        <div style="margin-top:20px;">
+            <a href="{{ url_for('signup') }}">
+                <button class="btn">Create Account</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ORBIX. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

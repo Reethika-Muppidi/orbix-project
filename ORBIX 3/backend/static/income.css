@@ -1,0 +1,83 @@
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* NAVBAR */
+nav {
+    background: #2a5298;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;   /* 👈 IMPORTANT */
+    align-items: center;      /* center horizontally */
+    margin-top: 60px;
+}
+/* CARD */
+.card {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.card strong {
+    color: #2a5298;
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* NAVBAR */
+nav {
+    background: #2a5298;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* REMOVE BULLETS + MAKE HORIZONTAL */
+nav ul {
+    list-style: none;        /* ❌ removes bullets */
+    display: flex;           /* ✅ horizontal layout */
+    gap: 20px;               /* space between items */
+    margin: 0;
+    padding: 0;
+}
+
+/* LINKS */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HOVER EFFECT */
+nav ul li a:hover {
+    text-decoration: underline;
+}

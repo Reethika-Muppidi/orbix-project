@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">ORBIX</div>
+    <ul>
+
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('about') }}">About</a></li>
+    <li><a href="{{ url_for('income') }}">Income</a></li>
+    <li><a href="{{ url_for('notifications') }}">Notifications</a></li>
+    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+
+</ul>
+</nav>
+
+<!-- HERO / WELCOME -->
+<div class="hero">
+    <h1>Welcome back, {{ user.name }} 👋</h1>
+    <p>Here’s your delivery overview</p>
+</div>
+
+<!-- DASHBOARD CARDS -->
+<div class="cards">
+
+    <div class="card">
+        <h3>Total Deliveries</h3>
+        <p>22</p>
+    </div>
+
+    <div class="card">
+        <h3>Completed</h3>
+        <p>11</p>
+    </div>
+
+    <div class="card">
+        <h3>Pending</h3>
+        <p>11</p>
+    </div>
+
+    <div class="card">
+        <h3>Weekly premium</h3>
+        <p>₹15</p>
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='income.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ORBIX</div>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('notifications') }}">Notifications</a></li>
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Delivery Details</h2>
+    <br><br>
+
+    <div class="card">
+        <p><strong>Name:</strong> {{ data.name }}</p>
+        <p><strong>Items to be delivered:</strong> {{ data.total_items }}</p>
+        <p><strong>Items delivered:</strong> {{ data.delivered }}</p>
+        <p><strong>Items yet to deliver:</strong> {{ data.pending }}</p>
+        <p><strong>External factors:</strong> {{ data.external_factors }}</p>
+        <p><strong>Weekly premium:</strong> ₹{{ data.weekly_premium }}</p>
+        <p><strong>Live location:</strong> {{ data.location }}</p>
+    </div>
+</div>
+
+</body>
+</html>

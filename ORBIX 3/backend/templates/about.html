@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ORBIX - About Us</title>
+    <style>
+        body { font-family: Arial; margin:0; background-color:#f8f9fa; }
+        header { background-color:#007bff; color:white; display:flex; justify-content:space-between; align-items:center; padding:15px 30px; }
+        header .logo { font-size:1.5rem; font-weight:bold; }
+        header nav ul { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+        header nav ul li a { color:white; text-decoration:none; font-weight:500; }
+        header nav ul li a:hover { text-decoration:underline; }
+        .container { max-width:900px; margin:30px auto; padding:20px; background:white; border-radius:10px; }
+        h2 { color:#007bff; margin-bottom:20px; }
+        p { margin-bottom:15px; color:#555; line-height:1.6; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ORBIX</div>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('income') }}">Income Details</a></li>
+
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>About Us</h2>
+    <p>Welcome to ORBIX! We are dedicated to providing a seamless and efficient delivery management system for delivery personnel. Our platform helps track deliveries, monitor income, and manage weekly plans effectively.</p>
+    <p>Our mission is to streamline the delivery process and provide delivery professionals with the tools they need to stay organized and maximize earnings. With real-time updates and a user-friendly dashboard, ORBIX makes delivery tracking simple and professional.</p>
+    <p>Thank you for being part of ORBIX. We are committed to supporting your success every step of the way!</p>
+</div>
+
+</body>
+</html>

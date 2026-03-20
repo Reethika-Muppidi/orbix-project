@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ORBIX - FAQ</title>
+    <style>
+        body { font-family: Arial; margin:0; background-color:#f8f9fa; }
+        header { background-color:#007bff; color:white; display:flex; justify-content:space-between; align-items:center; padding:15px 30px; }
+        header .logo { font-size:1.5rem; font-weight:bold; }
+        header nav ul { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+        header nav ul li a { color:white; text-decoration:none; font-weight:500; }
+        header nav ul li a:hover { text-decoration:underline; }
+        .container { max-width:900px; margin:30px auto; padding:20px; background:white; border-radius:10px; }
+        h2 { color:#007bff; margin-bottom:20px; }
+        .faq-item { margin-bottom:15px; }
+        .faq-item h3 { margin-bottom:5px; color:#007bff; font-size:1.1rem; }
+        .faq-item p { margin:0; color:#555; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ORBIX</div>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('income') }}">Income Details</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>Q1: How do I track my deliveries?</h3>
+        <p>A: Log in to your ORBIX account and check your dashboard to see all assigned deliveries and their status.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Q2: How is my weekly premium calculated?</h3>
+        <p>A: Weekly premium is fixed per week and may vary depending on completed deliveries. It is shown on your dashboard under “Income Details”.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Q3: Can I update my personal information?</h3>
+        <p>A: Currently, personal information can be updated by contacting ORBIX support. Future updates may allow in-app editing.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Q4: Who do I contact for support?</h3>
+        <p>A: For any issues, please email support@orbix.com or call our helpline.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
